@@ -3,7 +3,7 @@ import 'dotenv/config';
 export default defineConfig({
   use: {
     // All requests we send go to this API endpoint.
-    baseURL: 'https://int.api.paycaddy.dev/',
+    baseURL: `${process.env.URL_API}`,
     extraHTTPHeaders: {
       // We set this header per GitHub guidelines.
       'Accept': 'application/json',
